@@ -12,10 +12,20 @@
         <h1>Calculadora de Matrices</h1>
 
         <div class="input-section">
-            <label for="rows">Número de filas:</label>
-            <input type="number" id="rows">
-            <label for="cols">Número de columnas:</label>
-            <input type="number" id="cols">
+            <div class="matrix-size">
+                <h2>Matriz 1:</h2>
+                <label for="rowsMatrix1">Filas:</label>
+                <input type="number" id="rowsMatrix1">
+                <label for="colsMatrix1">Columnas:</label>
+                <input type="number" id="colsMatrix1">
+            </div>
+            <div class="matrix-size">
+                <h2>Matriz 2:</h2>
+                <label for="rowsMatrix2">Filas:</label>
+                <input type="number" id="rowsMatrix2">
+                <label for="colsMatrix2">Columnas:</label>
+                <input type="number" id="colsMatrix2">
+            </div>
             <button onclick="createMatrices()">Crear Matrices</button>
         </div>
 
@@ -37,6 +47,6 @@
         </div>
     </div>
 
-    <script src="client.js"></script>
+    <script src="/server/controllers.js"></script>
 </body>
 </html>
